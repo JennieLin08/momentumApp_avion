@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+section {
+    height: 100vh;
+    color: aliceblue;
+
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.div_weather {
+    /* width: 20vw; */
+    /* box-shadow: 0 8px 6px -6px black; */
+
+    /* text-align-last: end; */
+    padding: 2px;
+    margin: 2px;
+    height: 10vh;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div_time {
+    height: 30vh;
+}
+
+.div_time,
+.div_greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 10rem;
+}
+
+.div_greeting {
+    height: 10vh;
+    font-size: 6rem;
+}
+
+.div_goal {
+    height: 20vh;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_goal {
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+#goalDis {
+    font-size: 2.5rem;
+    text-align: center;
+}
+#spanGoal{
+    color:aquamarine;
+}
+#checkboxGoal{
+    height: 20px;
+    width: 20px;
+    margin-right: 1rem;
+}
+
+
+
+.input_goal:focus {
+    border-bottom: 1px solid white !important;
+    outline: none !important;
+    color: white;
+    background-color: transparent;
+}
+
+
+
+.div_name {
+    /* height: 20vh; */
+    /* font-size: 6rem; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.input_name {
+    font-size: 3rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.input_name:focus {
+    font-size: 3rem;
+    border-bottom: 1px solid white !important;
+    outline: none !important;
+    color: white;
+    background-color: transparent;
+}
+
+.input_name::placeholder {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.quote_container {
+    margin-top: 2rem;
+ 
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+#btn_del{
+        background-color: transparent;
+            border: none;
+}
+.fa-trash{
+    color:red;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.div_quote{
+width: 70vw;
+text-align: center;
+}
+
+
+
+
+

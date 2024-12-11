@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/quotemodal.css">
+    <link rel="stylesheet" href="assets/css/todosmodal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <section id="main">
+
+        <div class="div_weather d-flex justify-content-end">
+            <div class="div_name">
+                <input type="text" id="input_name" class="input_name" placeholder="Input your name here!">
+            </div>
+            <div id="weather_dis">
+                <!-- <h3 class=""> Weather</h3> -->
+            </div>
+        </div>
+
+        <div class="div_time">
+            <h1 class="time" id="time">TIME</h1>
+        </div>
+
+        <div class="div_greeting " id="div_greeting">
+            GREETINGS!
+        </div>
+
+        <div class="div_goal">
+            <div>
+                What is your main goal for today?
+            </div>
+            <div id="goalDis">
+                <input type="text" class="input_goal" id="input_goal">
+                <div>
+                    <button id="btn_del"><i class="fa-solid fa-trash"></i></button>
+                    <input type="checkbox" id="checkboxGoal" hidden><span id="spanGoal"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote_container" id="quote_container">
+            <div class="div_quote" id="div_quote">
+                Quote for today!
+            </div>
+            <div>
+                <span id="btnAddQuote"><i class="fa-solid fa-plus"></i></span>
+            </div>
+        </div>
+
+        <div class="div_todo_bottom" id="">
+            <span id="btnShowTodo">Todo/s</span>
+        </div>
+       
+    </section>
+
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <span class="closeModal">&times;</span>
+            <p><textarea name="" id="newQuote" class="tarea_new_quote"></textarea></p>
+        </div>
+    </div>
+    
+
+
+<div id="todosModal" class="todosModal">
+
+    <!-- Modal content -->
+    <div class="todo-modal-content">
+        <div class="todo-modal-header">
+            <span class="todo-close">&times;</span>
+            <h2>TODO/S</h2>
+        </div>
+        <div class="todo-modal-input">
+            <input type="text" id="inputTodo">
+        </div>
+        <div class="todo-modal-body">
+            <ul id="ul-todo">
+                <!-- <li>test</li> -->
+            </ul>
+        </div>
+        <!-- <div class="todo-modal-footer">
+            
+        </div> -->
+    </div>
+
+</div>
+
+   
+</body>
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.11/moment-timezone-with-data-2010-2020.min.js"></script>
+<script src="assets/js/index.js"></script>

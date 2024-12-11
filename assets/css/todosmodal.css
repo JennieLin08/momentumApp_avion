@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+.todosModal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* todosModal Content */
+.todo-modal-content {
+    position: fixed;
+    right:0;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 30%;
+    min-height: 50%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.todo-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.todo-close:hover,
+.todo-close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.todo-modal-header {
+    padding: 2px 16px;
+    background-color: #262e26;
+    color: white;
+}
+
+.todo-modal-body {
+    padding: 2px 16px;
+ color: #000;
+}
+
+.div_todo_bottom {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    /* border: 3px solid #8AC007; */
+    text-align: end;
+    /* padding: 10px; */
+}
+
+#btnShowTodo {
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.todo-modal-input{
+    text-align: center;
+    
+}
+
+#inputTodo{
+    height: 2rem;
+    width: 80%;
+    border:none;
+    border-bottom: 1px solid #000;
+    border-radius: 10px;
+    color: #000;
+    padding: 5px;
+        text-align: center;
+        font-size: 1.5rem;
+}
+
+#inputTodo:focus{
+border-bottom: 1px solid #000;
+outline-style: none;
+color: #000;
+padding: 5px;
+text-align: center;
+font-size: 1.5rem;
+}
+
+.todo-modal-body ul li {
+    color: #000;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+}
+.todo-modal-body ul li span{
+    color: #000;
+}
+
+
+/* .todo-modal-footer {
+    padding: 2px 16px;
+    background-color: #262e26;
+    color: white;
+} */
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
